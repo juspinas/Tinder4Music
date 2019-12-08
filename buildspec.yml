@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+       nodejs: 10
+  build:
+    commands:
+      - echo Zipping file now
+      - zip -r t4m.zip src
+      - echo File zip completed
+artifacts:
+  files:
+    - t4m.zip
